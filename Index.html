@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Face Swap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>Free AI Face Swap</h1>
+        <p>Powered by AIPhotoCraft.com API</p>
+
+        <div class="api-key-section">
+            <label for="apiKey">Enter Your API Key:</label>
+            <input type="password" id="apiKey" placeholder="Your secret API key">
+        </div>
+
+        <div class="image-upload-section">
+            <div class="upload-box">
+                <label for="sourceImage">1. Upload Source Image (The Face)</label>
+                <input type="file" id="sourceImage" accept="image/*">
+            </div>
+            <div class="upload-box">
+                <label for="targetImage">2. Upload Target Image (The Picture)</label>
+                <input type="file" id="targetImage" accept="image/*">
+            </div>
+        </div>
+
+        <button id="swapButton">Swap Faces!</button>
+
+        <div id="status"></div>
+        <div id="result"></div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
